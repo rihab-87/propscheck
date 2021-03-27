@@ -38,11 +38,15 @@ profile.propTypes = {
   fullName: PropTypes.string,
   profession: PropTypes.string,
   bio: PropTypes.string,
-  handlName: PropTypes.func,
+alert: PropTypes.func,
 };
 //Define default props for Profile component.
 profile.defaultProps = {
   fullName: "fullname",
   profession: "profession",
   bio: "bibiogaphie",
+  alert: function () {
+    alert('undefined profile')
+  }
+
 };
